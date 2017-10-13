@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        body {
-           line-height: 1.8;
-           color: #f5f6f7;
-        }
-        p {
-            font-size: 16px;
-        }
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <style>
+           body {
+              line-height: 1.8;
+              color: #050607;
+           }
+           p {
+               font-size: 16px;
+           }
 
-        .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-        .navbar {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: 0;
-            border-radius: 0;
-            margin-bottom: 0;
-            font-size: 12px;
-            letter-spacing: 5px;
-        }
-        .navbar-nav  li a:hover {
-            color: #1abc9c !important;
-        }
-
-    </style>
+           .container-fluid {
+               padding-top: 70px;
+               padding-bottom: 70px;
+           }
+           .navbar {
+               padding-top: 15px;
+               padding-bottom: 15px;
+               border: 0;
+               border-radius: 0;
+               margin-bottom: 0;
+               font-size: 12px;
+               letter-spacing: 5px;
+           }
+           .navbar-nav  li a:hover {
+               color: #1abc9c !important;
+           }
+           .badacontainer {
+               min-height: 500px;
+           }
+       </style>
     </head>
-    <body>
+    <body> <!--style="background-image: URL('./assets/disney-hero.jpg'); background-repeat: no-repeat;">-->
         <!-- Navbar Header -->
         <nav class="navbar navbar-default">
             <div class="container">
@@ -40,27 +43,27 @@
                 </div>
                 <div class="collapse navbar-collapse" id="balconyNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#intro_anchor">WHAT IS IT</li>
-                        <li><a href="#subscribe_anchor">SUBSCRIBE</li>
-                        <li><a href="#aboutus_anchor">ABOUT US</li>
+                        <li><a href="#intro_anchor">WHAT IS IT</a></li>
+                        <li><a href="#subscribe_anchor">SUBSCRIBE</a></li>
+                        <li><a href="#aboutus_anchor">ABOUT US</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Introduction Container -->
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center badacontainer">
             <a name="intro_anchor"></a>
             <h3>WHAT IS IT?</h3>
             <p>Intro text goes here! It's going to be huge</p>
         </div>
         <!-- Subscribe Container -->
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center badacontainer">
             <a name="subscribe_anchor"></a>
             <h3>Subscribe</h3>
             <p>Subscribe txt + T&C link text goes here! T&C probable on a different page</p>
         </div>
         <!-- About Us Container -->
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center badacontainer">
             <a name="aboutus_anchor"></a>
             <h3>About us</h3>
             <p>About the team text goes here!</p>
