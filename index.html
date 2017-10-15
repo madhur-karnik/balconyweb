@@ -6,32 +6,49 @@
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
        <style>
            body {
-              line-height: 1.8;
-              color: #050607;
+                line-height: 1.8;
+                color: #050607;
            }
            p {
-               font-size: 16px;
+                font-size: 16px;
            }
 
            .container-fluid {
-               padding-top: 70px;
-               padding-bottom: 70px;
+                padding-bottom: 70px;
            }
            .navbar {
-               padding-top: 15px;
-               padding-bottom: 15px;
-               border: 0;
-               border-radius: 0;
-               margin-bottom: 0;
-               font-size: 12px;
-               letter-spacing: 5px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 12px;
+                letter-spacing: 5px;
            }
            .navbar-nav  li a:hover {
-               color: #1abc9c !important;
+                color: #ff6347 !important;
            }
-           .badacontainer {
-               min-height: 500px;
-           }
+           .pagesection {
+		        margin-top: -100px;
+                min-height: 400px;
+           }	   
+		   .intro-bg {
+		        background-image: URL('./assets/banner.jpg');
+				background-repeat: no-repeat;
+				background-size: auto;
+				background-position: -400px 0px;
+				opacity: 0.3;
+				min-height: 400px;
+		   }
+		   .text-holder {
+				position: relative;
+				top: 120px;
+		   }
+		   .footer-bg { 
+		        background-color: #2f2f2f; /* Black Gray */
+                color: #fff;
+			    max-height: 100px;
+            }
        </style>
     </head>
     <body> <!--style="background-image: URL('./assets/disney-hero.jpg'); background-repeat: no-repeat;">-->
@@ -51,22 +68,36 @@
             </div>
         </nav>
         <!-- Introduction Container -->
-        <div class="container-fluid text-center badacontainer">
-            <a name="intro_anchor"></a>
-            <h3>WHAT IS IT?</h3>
-            <p>Intro text goes here! It's going to be huge</p>
+        <div class="container-fluid text-center pagesection introsection">
+			<div class="text-holder">
+                <a name="intro_anchor"></a>
+                <h3>WHAT IS IT?</h3>
+                <p>Intro text goes here! It's going to be huge.</p>
+			</div>
+			<div class="intro-bg"></div>
         </div>
         <!-- Subscribe Container -->
-        <div class="container-fluid text-center badacontainer">
+        <div class="container-fluid text-center pagesection">
             <a name="subscribe_anchor"></a>
-            <h3>Subscribe</h3>
+            <h3>Come join us</h3>
+			<div class="form-group">
+			    
+			</div>
             <p>Subscribe txt + T&C link text goes here! T&C probable on a different page</p>
+			<input type="button" class="btn btn-danger btn-subscribe" value="Subscribe" />
         </div>
         <!-- About Us Container -->
-        <div class="container-fluid text-center badacontainer">
+        <div class="container-fluid text-center pagesection">
             <a name="aboutus_anchor"></a>
             <h3>About us</h3>
-            <p>About the team text goes here!</p>
+            <p>
+			    We're a team of driven professionals who observed a decline in the customers visiting the theaters.<br />
+			    Striving to provide our subscribers the joy of experiencing a movie in its pure glory;<br />
+				and also raising the world of Cinema back to the Stars.
+			</p>
         </div>
+		<footer class="container-fluid text-center footer-bg">
+		    <p>Coming Soon to a Theater near you!</p>
+		</footer>
     </body>
 </html>
