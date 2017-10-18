@@ -5,18 +5,18 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
        <style>
-           body {
+            body {
                 line-height: 1.8;
                 color: #050607;
-           }
-           p {
+            }
+            p {
                 font-size: 16px;
-           }
+            }
 
-           .container-fluid {
+            .container-fluid {
                 padding-bottom: 70px;
-           }
-           .navbar {
+            }
+            .navbar {
                 padding-top: 15px;
                 padding-bottom: 15px;
                 border: 0;
@@ -24,31 +24,24 @@
                 margin-bottom: 0;
                 font-size: 12px;
                 letter-spacing: 5px;
-           }
-           .navbar-nav  li a:hover {
-                color: #ff6347 !important;
-           }
-           .pagesection {
-		        margin-top: -100px;
-                min-height: 400px;
-           }	   
-		   .intro-bg {
-		        background-image: URL('./assets/banner.jpg');
-				background-repeat: no-repeat;
-				background-size: auto;
-				background-position: -400px 0px;
-				opacity: 0.3;
-				min-height: 400px;
-		   }
-		   .text-holder {
-				position: relative;
-				top: 120px;
-		   }
-		   .footer-bg { 
-		        background-color: #2f2f2f; /* Black Gray */
-                color: #fff;
-			    max-height: 100px;
             }
+            .navbar-nav  li a:hover {
+                color: #ff6347 !important;
+            }
+            .pagesection {
+                max-width: 960px;
+                min-height: 400px;
+                padding-bottom: 0px;
+            }
+            .intro-bg {
+                margin-top: 50px;
+            }
+            .footer-bg {
+                background-color: #2f2f2f; /* Black Gray */
+                color: #fff;
+                max-height: 100px;
+            }
+
        </style>
     </head>
     <body> <!--style="background-image: URL('./assets/disney-hero.jpg'); background-repeat: no-repeat;">-->
@@ -69,12 +62,14 @@
         </nav>
         <!-- Introduction Container -->
         <div class="container-fluid text-center pagesection introsection">
-			<div class="text-holder">
-                <a name="intro_anchor"></a>
+            <a name="intro_anchor"></a>
+            <div class="col-sm-4">
+                <img src="./assets/seats.jpg" class="intro-bg img-circle" width=300 height=300 />
+            </div>
+            <div class="col-sm-8 text-right">
                 <h3>WHAT IS IT?</h3>
                 <p>Intro text goes here! It's going to be huge.</p>
-			</div>
-			<div class="intro-bg"></div>
+            </div>
         </div>
         <!-- Subscribe Container -->
         <div class="container-fluid text-center pagesection">
@@ -91,13 +86,13 @@
             <a name="aboutus_anchor"></a>
             <h3>About us</h3>
             <p>
-			    We're a team of driven professionals who observed a decline in the customers visiting the theaters.<br />
-			    Striving to provide our subscribers the joy of experiencing a movie in its pure glory;<br />
-				and also raising the world of Cinema back to the Stars.
-			</p>
+                We're a team of driven professionals who observed a decline in the customers visiting the theaters.<br />
+                Striving to provide our subscribers the joy of experiencing a movie in its pure glory;<br />
+                and also raising the world of Cinema back to the Stars.
+            </p>
         </div>
-		<footer class="container-fluid text-center footer-bg">
-		    <p>Coming Soon to a Theater near you!</p>
-		</footer>
+        <footer class="container-fluid text-center footer-bg">
+            <p>Coming Soon to a Theater near you!</p>
+        </footer>
     </body>
 </html>
