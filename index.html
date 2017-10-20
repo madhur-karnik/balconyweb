@@ -30,24 +30,34 @@
             }
             .pagesection {
                 max-width: 960px;
-                min-height: 400px;
+                min-height: 430px;
                 padding-bottom: 0px;
             }
             .intro-bg {
                 margin-top: 50px;
             }
-            .sub-header {
+            .sub-header,.aboutus-header {
                 padding-top: 20px;
             }
             .form-container {
                 margin: auto;
-                max-width:70%
+                max-width:50%
             }
             .input-group {
                 padding: 10px;
             }
             .btn-subscribe {
                 margin-top: 20px;
+            }
+            .rbtn-gender {
+                margin: -1px 5px 0px 5px !important;;
+            }
+            .chk-tnc {
+                margin: 1px 5px 0px 0px;
+            }
+            .subscribesection,.aboutussection {
+                background-image: URL("./assets/shadow.png");
+                background-size: 960px;
             }
             .footer-bg {
                 background-color: #2f2f2f; /* Black Gray */
@@ -84,32 +94,39 @@
             </div>
         </div>
         <!-- Subscribe Container -->
-        <div class="container-fluid text-center pagesection">
+        <div class="container-fluid text-center pagesection subscribesection">
             <a name="subscribe_anchor"></a>
             <h3 class="sub-header">Come join us</h3>
             <div class="form-group form-container">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="txt-name" name="txt-name" type="text" class="form-control" placeholder="Enter your name" />
+                    <input id="txt-name" name="txt-name" type="text" class="form-control" placeholder="Enter your name" maxlength="50" />
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                    <input id="txt-mobile" name="txt-mobile" type="text" class="form-control" placeholder="Enter mobile number" />
+                    <input id="txt-mobile" name="txt-mobile" type="text" class="form-control" placeholder="Enter mobile number" maxlength="10" />
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                    <input id="txt-email" name="txt-email" type="text" class="form-control" placeholder="Enter your email" />
+                    <input id="txt-email" name="txt-email" type="text" class="form-control" placeholder="Enter your email" maxlength="70" />
                 </div>
                 <div class="input-group">
                     <span>Gender: </span>
-                    <input/>
-                    <input/>
+					<input type="radio" id="rbtn-male" name="rbtn-gender" class="radio-inline rbtn-gender" value="M"/>
+					<label id="lbl-male" for="rbtn-male" class="lbl-gender">Male</label>
+                    <input type="radio" id="rbtn-female" name="rbtn-gender" class="radio-inline rbtn-gender" value="F"/>
+					<label id="lbl-female" for="rbtn-female" class="lbl-gender">Female</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="chk-tnc" class="chk-tnc" name="chk-tnc" />
+                    <label id="lbl-tnc" for="chk-tnc">&nbsp;You agree to the&nbsp;</label>
+					<a data-toggle="modal" data-target="#tnc-modal">Terms and conditions</a>
                 </div>
                 <input type="button" id="btn-subscribe" class="btn btn-danger btn-subscribe" value="Subscribe" />
             </div>
         </div>
         <!-- About Us Container -->
-        <div class="container-fluid text-center pagesection">
+        <div class="container-fluid text-center pagesection aboutussection">
             <a name="aboutus_anchor"></a>
             <h3 class="aboutus-header">About us</h3>
             <p>
@@ -121,5 +138,22 @@
         <footer class="container-fluid text-center footer-bg">
             <p>Coming Soon to a Theater near you!</p>
         </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="tnc-modal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Terms & Conditions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Can't believe you actually came here!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
