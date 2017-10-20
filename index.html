@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-       <style>
-           body {
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body {
                 line-height: 1.8;
                 color: #050607;
-           }
-           p {
+            }
+            p {
                 font-size: 16px;
-           }
+            }
 
-           .container-fluid {
+            .container-fluid {
                 padding-bottom: 70px;
-				margin: auto auto;
-				max-width: 960px;
-				box-shadow: 0px 0px 10px #888888;
-           }
-           .navbar {
-				max-width: 960px;
+            }
+            .navbar {
                 padding-top: 15px;
                 padding-bottom: 15px;
                 border: 0;
                 border-radius: 0;
-                margin: auto auto;
+                margin-bottom: 0;
                 font-size: 12px;
                 letter-spacing: 5px;
-           }
-		   .navbar-collapse {
-				max-width: 960px;
-		   }
-           .navbar-nav  li a:hover {
-                color: #ff6347 !important;
-           }
-		   
-           .pagesection {
-                min-height: 400px;
-           }	   
-		   .intro-bg {
-				background-repeat: no-repeat;
-				background-size: auto;
-				min-height: 400px;
-		   }
-		   .form-container {
-				max-width: 400px;
-		   }
-		   .footer-bg { 
-		        background-color: #2f2f2f; /* Black Gray */
-                color: #fff;
-			    max-height: 100px;
             }
-       </style>
+            .navbar-nav  li a:hover {
+                color: #ff6347 !important;
+            }
+            .pagesection {
+                max-width: 960px;
+                min-height: 400px;
+                padding-bottom: 0px;
+            }
+            .intro-bg {
+                margin-top: 50px;
+            }
+            .sub-header {
+                padding-top: 20px;
+            }
+            .form-container {
+                margin: auto;
+                max-width:70%
+            }
+            .input-group {
+                padding: 10px;
+            }
+            .btn-subscribe {
+                margin-top: 20px;
+            }
+            .footer-bg {
+                background-color: #2f2f2f; /* Black Gray */
+                color: #fff;
+                max-height: 100px;
+            }
+        </style>
     </head>
-    <body>
+    <body> <!--style="background-image: URL('./assets/disney-hero.jpg'); background-repeat: no-repeat;">-->
         <!-- Navbar Header -->
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <div class="navbar-brand">Balcony</div>
@@ -71,40 +73,53 @@
             </div>
         </nav>
         <!-- Introduction Container -->
-        <div class="container-fluid text-center pagesection introsection">
+        <div class="container-fluid pagesection introsection">
             <a name="intro_anchor"></a>
-			<div class="row">
-				<div class="col-sm-4 intro-bg">
-					<img src="./assets/seats.jpg" class="img-responsive img-circle margin" alt="Theater Seats" width="200" height="200">
-				</div>
-				<div class="col-sm-8 text-holder">
-					<h3>WHAT IS IT?</h3>
-					<p>Intro text goes here! It's going to be huge.</p>
-				</div>
-			</div>
+            <div class="col-sm-4">
+                <img src="./assets/seats.jpg" class="intro-bg img-circle" width=300 height=300 />
+            </div>
+            <div class="col-sm-8 text-right">
+                <h3 class="intro-header">WHAT IS IT?</h3>
+                <p>Intro text goes here! It's going to be huge.</p>
+            </div>
         </div>
         <!-- Subscribe Container -->
         <div class="container-fluid text-center pagesection">
             <a name="subscribe_anchor"></a>
-            <h3>Come join us</h3>
-			<div class="form-group form-container">
-			    
-			</div>
-            <p>Subscribe txt + T&C link text goes here! T&C probable on a different page</p>
-			<input type="button" class="btn btn-danger btn-subscribe" value="Subscribe" />
+            <h3 class="sub-header">Come join us</h3>
+            <div class="form-group form-container">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="txt-name" name="txt-name" type="text" class="form-control" placeholder="Enter your name" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                    <input id="txt-mobile" name="txt-mobile" type="text" class="form-control" placeholder="Enter mobile number" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input id="txt-email" name="txt-email" type="text" class="form-control" placeholder="Enter your email" />
+                </div>
+                <div class="input-group">
+                    <span>Gender: </span>
+                    <input/>
+                    <input/>
+                </div>
+                <input type="button" id="btn-subscribe" class="btn btn-danger btn-subscribe" value="Subscribe" />
+            </div>
         </div>
         <!-- About Us Container -->
         <div class="container-fluid text-center pagesection">
             <a name="aboutus_anchor"></a>
-            <h3>About us</h3>
+            <h3 class="aboutus-header">About us</h3>
             <p>
-			    We're a team of driven professionals who observed a decline in the customers visiting the theaters.<br />
-			    Striving to provide our subscribers the joy of experiencing a movie in its pure glory;<br />
-				and also raising the world of Cinema back to the Stars.
-			</p>
+                We're a team of driven professionals who observed a decline in the customers visiting the theaters.<br />
+                Striving to provide our subscribers the joy of experiencing a movie in its pure glory;<br />
+                and also raising the world of Cinema back to the Stars.
+            </p>
         </div>
-		<footer class="container-fluid text-center footer-bg">
-		    <p>Coming Soon to a Theater near you!</p>
-		</footer>
+        <footer class="container-fluid text-center footer-bg">
+            <p>Coming Soon to a Theater near you!</p>
+        </footer>
     </body>
 </html>
