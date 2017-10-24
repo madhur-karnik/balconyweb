@@ -1,6 +1,7 @@
 body {
     line-height: 1.8;
     color: #FFFFDF;
+	background-color: rgb(204,0,0);
 }
 p {
     font-size: 16px;
@@ -56,8 +57,17 @@ p {
 .chk-tnc {
     margin: 1px 5px 0px 0px;
 }
+.err-mark {
+    display: none;
+    color: #FF0000;
+    font-weight: bold;
+}
 .footer-bg {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
     max-height: 100px;
+}
+
+.footer-bg p {
+    margin-top: 35px;
 }

@@ -24,16 +24,11 @@
             </div>
         </nav>-->
         <!-- Introduction Container -->
-        <div class="container-fluid pagesection introsection">
+        <div class="container-fluid text-center pagesection introsection">
             <a name="intro_anchor"></a>
-            <div class="col-sm-4">
-                <img src="./assets/seats.jpg" class="intro-bg img-circle" width=300 height=300 />
-            </div>
-            <div class="col-sm-8 text-right">
-                <h1 class="intro-header section-header">Balcony</h1>
-                <h3>Hit hai!</h3>
-                <p>Welcome to a newer, better <i>filmy</i> experience</p>
-            </div>
+            <h1 class="intro-header section-header">Balcony</h1>
+            <h3>Hit hai!</h3>
+            <p>Welcome to a newer, better <i>filmy</i> experience</p>
         </div>
         <!-- Why Us Container -->
         <div class="container-fluid text-center pagesection whyussection">
@@ -68,17 +63,17 @@
                 Once you register, we will send you your Balcony Card to your registered address. Watch your email inbox for more details.
             </p>
             <div class="form-group form-container">
-                <div class="input-group">
+                <div id="ig-name" class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <input id="txt-name" name="txt-name" type="text" class="form-control" placeholder="Enter your name" maxlength="50" />
                 </div>
-                <div class="input-group">
+                <div id="ig-mobile" class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
                     <input id="txt-mobile" name="txt-mobile" type="text" class="form-control" placeholder="Enter mobile number" maxlength="10" />
                 </div>
-                <div class="input-group">
+                <div id="ig-email" class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                    <input id="txt-email" name="txt-email" type="text" class="form-control" placeholder="Enter your email" maxlength="70" />
+                    <input id="txt-email" name="txt-email" type="email" class="form-control" placeholder="Enter your email" maxlength="70" />
                 </div>
                 <div class="input-group">
                     <span>Gender: </span>
@@ -86,13 +81,15 @@
                     <label id="lbl-male" for="rbtn-male" class="lbl-gender">Male</label>
                     <input type="radio" id="rbtn-female" name="rbtn-gender" class="radio-inline rbtn-gender" value="F"/>
                     <label id="lbl-female" for="rbtn-female" class="lbl-gender">Female</label>
+                    <span id="err-gender" class="err-mark">*</span>
                 </div>
                 <div class="input-group">
                     <input type="checkbox" id="chk-tnc" class="chk-tnc" name="chk-tnc" />
                     <label id="lbl-tnc" for="chk-tnc">&nbsp;You agree to the&nbsp;</label>
                     <a data-toggle="modal" data-target="#tnc-modal">Terms and conditions</a>
+                    <span id="err-tnc" class="err-mark">*</span>
                 </div>
-                <input type="button" id="btn-subscribe" class="btn btn-danger btn-subscribe" value="Subscribe" />
+                <input type="button" id="btn-subscribe" class="btn btn-danger btn-subscribe" onclick="validateInputs()" value="I'm Interested" />
             </div>
         </div>
         <footer class="container-fluid text-center footer-bg">
