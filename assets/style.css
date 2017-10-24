@@ -1,0 +1,63 @@
+body {
+    line-height: 1.8;
+    color: #FFFFDF;
+}
+p {
+    font-size: 16px;
+}
+.container-fluid {
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #ff6347 !important;
+}
+.pagesection {
+    max-width: 960px;
+    min-height: 800px;
+    padding-bottom: 0px;
+    background-image: URL("./shadow.png");
+    background-size: 960px;
+    background-repeat: no-repeat;
+}
+.intro-bg {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.section-header {
+    padding-top: 20px;
+}
+.text-content {
+    margin: auto;
+    width: 750px;
+    font-size: 17px;
+}
+.form-container {
+    margin: auto;
+    max-width:50%
+}
+.input-group {
+    padding: 10px;
+}
+.btn-subscribe {
+    margin-top: 20px;
+}
+.rbtn-gender {
+    margin: -1px 5px 0px 5px !important;;
+}
+.chk-tnc {
+    margin: 1px 5px 0px 0px;
+}
+.footer-bg {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+    max-height: 100px;
+}

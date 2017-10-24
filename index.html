@@ -4,71 +4,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style>
-            body {
-                line-height: 1.8;
-                color: #050607;
-            }
-            p {
-                font-size: 16px;
-            }
-
-            .container-fluid {
-                padding-bottom: 70px;
-            }
-            .navbar {
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: 0;
-                border-radius: 0;
-                margin-bottom: 0;
-                font-size: 12px;
-                letter-spacing: 5px;
-            }
-            .navbar-nav  li a:hover {
-                color: #ff6347 !important;
-            }
-            .pagesection {
-                max-width: 960px;
-                min-height: 430px;
-                padding-bottom: 0px;
-            }
-            .intro-bg {
-                margin-top: 50px;
-            }
-            .sub-header,.aboutus-header {
-                padding-top: 20px;
-            }
-            .form-container {
-                margin: auto;
-                max-width:50%
-            }
-            .input-group {
-                padding: 10px;
-            }
-            .btn-subscribe {
-                margin-top: 20px;
-            }
-            .rbtn-gender {
-                margin: -1px 5px 0px 5px !important;;
-            }
-            .chk-tnc {
-                margin: 1px 5px 0px 0px;
-            }
-            .subscribesection,.aboutussection {
-                background-image: URL("./assets/shadow.png");
-                background-size: 960px;
-            }
-            .footer-bg {
-                background-color: #2f2f2f; /* Black Gray */
-                color: #fff;
-                max-height: 100px;
-            }
-        </style>
+        <link rel="stylesheet" href="./assets/style.css">
+        <script src="./assets/actions.js"></script>
     </head>
-    <body> <!--style="background-image: URL('./assets/disney-hero.jpg'); background-repeat: no-repeat;">-->
+    <body>
         <!-- Navbar Header -->
-        <nav class="navbar navbar-default">
+        <!--<nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <div class="navbar-brand">Balcony</div>
@@ -77,11 +18,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#intro_anchor">WHAT IS IT</a></li>
                         <li><a href="#subscribe_anchor">SUBSCRIBE</a></li>
-                        <li><a href="#aboutus_anchor">ABOUT US</a></li>
+                        <li><a href="#whyus_anchor">ABOUT US</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>-->
         <!-- Introduction Container -->
         <div class="container-fluid pagesection introsection">
             <a name="intro_anchor"></a>
@@ -89,14 +30,43 @@
                 <img src="./assets/seats.jpg" class="intro-bg img-circle" width=300 height=300 />
             </div>
             <div class="col-sm-8 text-right">
-                <h3 class="intro-header">WHAT IS IT?</h3>
-                <p>Intro text goes here! It's going to be huge.</p>
+                <h1 class="intro-header section-header">Balcony</h1>
+                <h3>Hit hai!</h3>
+                <p>Welcome to a newer, better <i>filmy</i> experience</p>
             </div>
+        </div>
+        <!-- Why Us Container -->
+        <div class="container-fluid text-center pagesection whyussection">
+            <a name="whyus_anchor"></a>
+            <h3 class="whyus-header section-header">Why Balcony?</h3>
+            <p class="whyus-content text-content">
+                Why Balcony?
+                We believe that entertainment should be convenient. Mega convenient. While simultaneously being cheap. And not just any cheap. Think current, popular online streaming platforms kinda cheap. Well, almost. But let’s dispel any doubts right at the start. Would you watch a movie every day, if you had the chance to? And not at your home on a small screen. We’re talking about the cinemas. Too good to be true? Well, that’s the Balcony experience. For when you go watch a film, balcony seat toh banta hai boss.
+            </p>
+        </div>
+        <!-- How is it different Container -->
+        <div class="container-fluid text-center pagesection howisitsection">
+            <a name="howisit_anchor"></a>
+            <h3 class="howisit-header section-header">How is it different?</h3>
+            <p class="howisit-content text-content">
+                You want to catch that latest flick that’s gracing the screens and garnering great reviews all over. But what’s the first thing you do? Check ticket prices online. We’re here to change that. So the only thing that comes in the way of you and your movie is your choice of which one! Unlimited movies at a fixed price – that’s our simple motto.
+            </p>
+        </div>
+        <!-- How does it work Container -->
+        <div class="container-fluid text-center pagesection howitworkssection">
+            <a name="howitworks_anchor"></a>
+            <h3 class="howitworks-header section-header">How does it work?</h3>
+            <p class="howitworks-content text-content">
+                It’s as simple as 1-2- 3. Quite literally. Sign up and get your Balcony Card, select your movie, and flash your card at the theatre – in full CID style.
+            </p>
         </div>
         <!-- Subscribe Container -->
         <div class="container-fluid text-center pagesection subscribesection">
             <a name="subscribe_anchor"></a>
-            <h3 class="sub-header">Come join us</h3>
+            <h3 class="sub-header section-header">I'm interested. What's Next?</h3>
+            <p class="subscribe-content text-content">
+                Once you register, we will send you your Balcony Card to your registered address. Watch your email inbox for more details.
+            </p>
             <div class="form-group form-container">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -112,28 +82,18 @@
                 </div>
                 <div class="input-group">
                     <span>Gender: </span>
-					<input type="radio" id="rbtn-male" name="rbtn-gender" class="radio-inline rbtn-gender" value="M"/>
-					<label id="lbl-male" for="rbtn-male" class="lbl-gender">Male</label>
+                    <input type="radio" id="rbtn-male" name="rbtn-gender" class="radio-inline rbtn-gender" value="M"/>
+                    <label id="lbl-male" for="rbtn-male" class="lbl-gender">Male</label>
                     <input type="radio" id="rbtn-female" name="rbtn-gender" class="radio-inline rbtn-gender" value="F"/>
-					<label id="lbl-female" for="rbtn-female" class="lbl-gender">Female</label>
+                    <label id="lbl-female" for="rbtn-female" class="lbl-gender">Female</label>
                 </div>
                 <div class="input-group">
                     <input type="checkbox" id="chk-tnc" class="chk-tnc" name="chk-tnc" />
                     <label id="lbl-tnc" for="chk-tnc">&nbsp;You agree to the&nbsp;</label>
-					<a data-toggle="modal" data-target="#tnc-modal">Terms and conditions</a>
+                    <a data-toggle="modal" data-target="#tnc-modal">Terms and conditions</a>
                 </div>
                 <input type="button" id="btn-subscribe" class="btn btn-danger btn-subscribe" value="Subscribe" />
             </div>
-        </div>
-        <!-- About Us Container -->
-        <div class="container-fluid text-center pagesection aboutussection">
-            <a name="aboutus_anchor"></a>
-            <h3 class="aboutus-header">About us</h3>
-            <p>
-                We're a team of driven professionals who observed a decline in the customers visiting the theaters.<br />
-                Striving to provide our subscribers the joy of experiencing a movie in its pure glory;<br />
-                and also raising the world of Cinema back to the Stars.
-            </p>
         </div>
         <footer class="container-fluid text-center footer-bg">
             <p>Coming Soon to a Theater near you!</p>
