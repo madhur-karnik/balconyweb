@@ -25,6 +25,10 @@ $(document).ready(function() {
     });
 });
 
+function sendInviteRequest() {
+    console.log("Hook it up");
+}
+
 function validateInputs() {
 	isValid = true;
     var name, email, mobile, gender;
