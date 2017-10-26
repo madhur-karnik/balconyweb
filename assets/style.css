@@ -22,8 +22,13 @@ p {
 }
 .pagesection {
     width: 95vw;
-    height: 100vh;
+    height: 80vh;
     padding-bottom: 0px;
+    display: table;
+}
+.tablecell {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .section-header {
@@ -36,11 +41,13 @@ p {
     width: 800px;
     font-size: 23px;
 }
+
 /* Intro Section */
 .introsection {
     color: #FFFFDF;
     background-color: #DD0000;
     position: relative;
+    height: 1000px;
 }
 .intro-anchor {
     padding: 50px;
@@ -49,33 +56,33 @@ p {
     background-image: URL("./logo_balcony.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 46px;
+    width: 260px;
+    height: 60px;
     margin: auto;
     padding-bottom: 100px;
 }
 .intro-container {
     margin: auto;
     border: 5px solid #FFFFDF;
-    width: 80%;
-    height: 30%;
+    width: 900px;
+    height: 500px;
     display: table;
 }
 .intro-header {
     font-size: 125px;
-    text-align: right;
     display: table-cell;
     vertical-align: middle;
 }
 .intro-tag {
     font-size: 50px;
+    text-align: left;
     display: table-cell;
     vertical-align: middle;
 }
 .intro-slogan {
     margin: auto;
     font-size: 25px;
-    width: 60%;
+    width: 800px;
     background-color: #DD0000;
     margin-top: -25px;
 }
@@ -114,10 +121,15 @@ p {
     font-weight: bold;
 }
 
-/* Form Section */
+/* Subscribe Section */
+.subscribesection {
+    background-color: #273DDB;
+    color: #DADDAD;
+    height: 700px;
+}
 .form-container {
     margin: auto;
-    max-width:50%
+    max-width: 650px;
 }
 .input-group {
     padding: 10px;
@@ -136,6 +148,13 @@ p {
     color: #DD0000;
     font-weight: bold;
 }
+
+.tnc-link {
+    cursor: pointer;
+    color: #FF9500;
+}
+
+/* Footer */
 .footer-bg {
     background-color: #2F2F2F; /* Black Gray */
     color: #fff;
