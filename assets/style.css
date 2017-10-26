@@ -125,7 +125,7 @@ p {
 .subscribesection {
     background-color: #273DDB;
     color: #DADDAD;
-    max-height: 700px;
+    max-height: 750px;
 }
 .form-container {
     margin: auto;
@@ -153,6 +153,11 @@ p {
     cursor: pointer;
     color: #FF9500;
 }
+.tnc-link:hover {
+    cursor: pointer;
+    color: #FFCC77;
+}
+
 
 /* Footer */
 .footer-bg {
