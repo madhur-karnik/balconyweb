@@ -22,7 +22,7 @@ p {
 }
 .pagesection {
     width: 95vw;
-    height: 80vh;
+    height: 90vh;
     padding-bottom: 0px;
     display: table;
 }
@@ -47,7 +47,7 @@ p {
     color: #FFFFDF;
     background-color: #DD0000;
     position: relative;
-    height: 1000px;
+    min-height: 1000px;
 }
 .intro-anchor {
     padding: 50px;
@@ -125,7 +125,7 @@ p {
 .subscribesection {
     background-color: #273DDB;
     color: #DADDAD;
-    height: 700px;
+    max-height: 700px;
 }
 .form-container {
     margin: auto;
