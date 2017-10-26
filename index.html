@@ -26,17 +26,25 @@
         </nav>-->
         <!-- Introduction Container -->
         <div class="container-fluid text-center pagesection introsection">
-            <a name="intro_anchor"></a>
-            <h1 class="intro-header section-header">Balcony</h1>
-            <h3>Hit hai!</h3>
-            <p>Welcome to a newer, better <i>filmy</i> experience</p>
+            <a class="intro-anchor" name="intro_anchor"></a>
+            <div class="intro-toplogo"></div>
+            <div class="intro-container">
+                <span class="intro-header">Balcony</span>
+                <span class="intro-tag">Hit hai!</span>
+            </div>
+            <div class="intro-slogan">Welcome to a newer, better filmy experience</div>
+            <div class="intro-bottomlogo"></div>
         </div>
         <!-- Why Us Container -->
         <div class="container-fluid text-center pagesection whyussection">
             <a name="whyus_anchor"></a>
             <h3 class="whyus-header section-header">Putting movies first</h3>
             <p class="whyus-content text-content">
-                We believe that entertainment should be convenient. Mega convenient. While simultaneously being cheap. And not just any cheap. Think current, popular online streaming platforms kinda cheap. Well, almost. But let’s dispel any doubts right at the start. Would you watch a movie every day, if you had the chance to? And not at your home on a small screen. We’re talking about the cinemas. Too good to be true? Well, that’s the Balcony experience. For when you go watch a film, <i>balcony seat toh banta hai boss</i>.
+                We believe that entertainment should be convenient. Mega convenient.<br />
+                While simultaneously being cheap.<br />
+                And not just any cheap. Think current, popular online streaming platforms kinda cheap. Well, almost. But let’s dispel any doubts right at the start. Would you watch a movie every day, if you had the chance to? And not at your home on a small screen. We’re talking about the cinemas. <br />
+                Too good to be true? Well, <br />that’s the Balcony experience. For when you go watch a film,<br /><br />
+                <span class="whyus-slogan">Balcony seat toh banta hai boss.</span>
             </p>
         </div>
         <!-- How is it different Container -->
@@ -52,8 +60,23 @@
             <a name="howitworks_anchor"></a>
             <h3 class="howitworks-header section-header">How does it work?</h3>
             <p class="howitworks-content text-content">
-                It’s as simple as 1-2- 3. Quite literally. Sign up and get your Balcony Card, select your movie, check the theatre and show timings, and flash your card at the theatre – in full CID style. Okay, that’s a tad dramatic. You need to swipe it.
+                <span class="howitworks-subheader">It’s as simple as 1-2-3.</span> <br />
+                Quite literally. Sign up and get your Balcony Card, select your movie, check the theatre and show timings, and flash your card at the theatre – in full CID style. Okay, that’s a tad dramatic. You need to swipe it.
             </p>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <img src="./assets/step1.png" alt="Get Balcony card" width="365" height="258" />
+                    <p class="step-header">Get your card</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./assets/step2.png" alt="Select Movie and Theater" width="365" height="258" />
+                    <p class="step-header">Select your movie</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./assets/step3.png" alt="Swipe to get ticket" width="365" height="258" />
+                    <p class="step-header">Enjoy the show</p>
+                </div>
+            </div>
         </div>
         <!-- Subscribe Container -->
         <div class="container-fluid text-center pagesection subscribesection">
@@ -86,7 +109,7 @@
                 <div class="input-group">
                     <input type="checkbox" id="chk-tnc" class="chk-tnc" name="chk-tnc" />
                     <label id="lbl-tnc" for="chk-tnc">&nbsp;You agree to the&nbsp;</label>
-                    <a data-toggle="modal" data-target="#tnc-modal">Terms and conditions</a>
+                    <a data-toggle="modal" data-target="#tnc-modal" style="cursor: pointer;">Terms and conditions</a>
                     <span id="err-tnc" class="err-mark">*</span>
                 </div>
                 <input type="button" id="btn-subscribe" class="btn btn-danger btn-subscribe" onclick="validateInputs()" value="I'm Interested" />
@@ -96,7 +119,7 @@
             <p>Coming Soon to a Theater near you!</p>
         </footer>
         <!-- Modal -->
-        <div class="modal fade" id="tnc-modal" role="dialog">
+        <div class="modal fade modal-text" id="tnc-modal" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">

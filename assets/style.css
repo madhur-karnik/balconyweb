@@ -1,11 +1,10 @@
 body {
     line-height: 1.8;
-    color: #FFFFDF;
-	background-color: rgb(204,0,0);
 }
 p {
     font-size: 16px;
 }
+
 .container-fluid {
     padding-bottom: 70px;
 }
@@ -22,25 +21,100 @@ p {
     color: #ff6347 !important;
 }
 .pagesection {
-    max-width: 960px;
-    min-height: 800px;
+    width: 95vw;
+    height: 100vh;
     padding-bottom: 0px;
-    background-image: URL("./shadow.png");
-    background-size: 960px;
-    background-repeat: no-repeat;
 }
-.intro-bg {
-    margin-top: 50px;
-    margin-left: 50px;
-}
+
 .section-header {
-    padding-top: 20px;
+    padding: 50px 0px;
+    font-size: 45px;
 }
+
 .text-content {
     margin: auto;
-    width: 750px;
-    font-size: 17px;
+    width: 800px;
+    font-size: 23px;
 }
+/* Intro Section */
+.introsection {
+    color: #FFFFDF;
+    background-color: #DD0000;
+    position: relative;
+}
+.intro-anchor {
+    padding: 50px;
+}
+.intro-toplogo {
+    background-image: URL("./logo_balcony.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 46px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.intro-container {
+    margin: auto;
+    border: 5px solid #FFFFDF;
+    width: 80%;
+    height: 30%;
+    display: table;
+}
+.intro-header {
+    font-size: 125px;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+}
+.intro-tag {
+    font-size: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.intro-slogan {
+    margin: auto;
+    font-size: 25px;
+    width: 60%;
+    background-color: #DD0000;
+    margin-top: -25px;
+}
+.intro-bottomlogo {
+    margin: auto;
+    background-image: URL("./logo_half_circle.png");
+    width: 253px;
+    height: 137px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -126px;
+}
+
+
+/* Why us Section */
+.whyus-slogan {
+    color: #DD0000;
+    font-weight: bold;
+}
+
+/* How is it Section */
+.howisitsection {
+    background-color: #5FD9EA;
+}
+
+/* How does it work Section */
+.howitworks-header {
+    color: #DD0000;
+}
+.howitworks-subheader {
+    font-size: 30px;
+}
+.step-header {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Form Section */
 .form-container {
     margin: auto;
     max-width:50%
@@ -59,15 +133,19 @@ p {
 }
 .err-mark {
     display: none;
-    color: #FF0000;
+    color: #DD0000;
     font-weight: bold;
 }
 .footer-bg {
-    background-color: #2f2f2f; /* Black Gray */
+    background-color: #2F2F2F; /* Black Gray */
     color: #fff;
     max-height: 100px;
 }
 
 .footer-bg p {
     margin-top: 35px;
+}
+
+.modal-text {
+    color: #000000;
 }
