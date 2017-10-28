@@ -26,7 +26,15 @@ $(document).ready(function() {
     });
 });
 
-function sendInviteRequest() {
+function sendInviteRequest(details) {
+    $.ajax({
+        url: "https://test.quikwallet.com/api/edenred/sendbcmail",
+        method: "POST",
+        data: details,
+        contentType: "application/json",
+        success: function(res) { console.log("Success Response",res); },
+        error: function(res) { console.log("Failed Response",res); }
+	});
     console.log("Hook it up");
 }
 
@@ -58,6 +66,12 @@ function validateInputs() {
     }
 
     if(isValid){
-        sendInviteRequest();	
+        details = {
+            "name": name,
+            "mobile": mobile,
+            "email": email,
+            "gender": gender
+        };
+        sendInviteRequest(details);	
     }
 }
