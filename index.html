@@ -107,18 +107,19 @@
                     </div>
                     <div class="input-group">
                         <span>Gender: </span>
-                        <input type="radio" id="rbtn-male" name="rbtn-gender" class="radio-inline rbtn-gender" value="M"/>
+                        <input type="radio" id="rbtn-male" name="rbtn-gender" class="radio-inline rbtn-gender rbtn-chk" value="M"/>
                         <label id="lbl-male" for="rbtn-male" class="lbl-gender">Male</label>
-                        <input type="radio" id="rbtn-female" name="rbtn-gender" class="radio-inline rbtn-gender" value="F"/>
+                        <input type="radio" id="rbtn-female" name="rbtn-gender" class="radio-inline rbtn-gender rbtn-chk" value="F"/>
                         <label id="lbl-female" for="rbtn-female" class="lbl-gender">Female</label>
                         <span id="err-gender" class="err-mark">*</span>
                     </div>
                     <div class="input-group">
-                        <input type="checkbox" id="chk-tnc" class="chk-tnc" name="chk-tnc" />
+                        <input type="checkbox" id="chk-tnc" class="chk-tnc rbtn-chk" name="chk-tnc" />
                         <label id="lbl-tnc" for="chk-tnc">&nbsp;You agree to the&nbsp;</label>
                         <a data-toggle="modal" data-target="#tnc-modal" class="tnc-link">Terms and conditions</a>
                         <span id="err-tnc" class="err-mark">*</span>
                     </div>
+                    <span class="error-text"></span>
                     <input type="button" id="btn-subscribe" class="btn btn-danger btn-subscribe" onclick="validateInputs()" value="I'm Interested" />
                 </div>
             </div>
@@ -126,7 +127,7 @@
         <footer class="container-fluid text-center footer-bg">
             <p>Coming Soon to a Theater near you!</p>
         </footer>
-        <!-- Modal -->
+        <!-- TnC Modal -->
         <div class="modal fade modal-text" id="tnc-modal" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -137,6 +138,23 @@
                     <div class="modal-body">
                         <p>Can't believe you actually came here!</p>
                         <p>We're still sorting these out.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Submit Modal -->
+        <div class="modal fade modal-text" id="submit-modal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Yay! You're sorted...</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Now just sit back and wait for our invite.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

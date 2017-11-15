@@ -26,8 +26,26 @@ $(document).ready(function() {
     });
 });
 
-function sendInviteRequest() {
-    console.log("Hook it up");
+function sendInviteRequest(details) {
+    $.ajax({
+        url: "https://test.quikwallet.com/api/edenred/sendbcmail",
+        header: {
+            "Content-Type": "application/json"
+        },
+        method: "POST",
+        data: details,
+        dataType: "json",
+        rejectUnauthorized:  false,
+        crossDomain: true,
+        error: function (res) {
+            console.log("Error",res);
+        },
+        success: function (res) {
+            $(".form-control").val('');
+            $(".rbtn-chk").prop("checked",false);
+            $("#submit-modal").show();
+        }
+    });
 }
 
 function validateInputs() {
@@ -58,6 +76,12 @@ function validateInputs() {
     }
 
     if(isValid){
-        sendInviteRequest();	
+        details = {
+            "name": name,
+            "email": email,
+            "mobile": mobile,
+            "gender": gender
+        };
+        sendInviteRequest(details);
     }
 }

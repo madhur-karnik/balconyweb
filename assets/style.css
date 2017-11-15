@@ -148,6 +148,10 @@ p {
     color: #DD0000;
     font-weight: bold;
 }
+.error-text {
+    color: #DD0000;
+    height: 20px;
+}
 
 .tnc-link {
     cursor: pointer;
